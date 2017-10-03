@@ -12,7 +12,11 @@
 .haiku-edit h1 {
     color:#F4EF6B;
     text-align: center;
+<<<<<<< HEAD
     text-shadow:ss
+=======
+    text-shadow:
+>>>>>>> 7e5095624281b0c7558dee865bdd5a9129d52775
     1px 2px 0px #666561,
     2px 3px 15px #EDEDED;
 }
@@ -32,6 +36,14 @@
     column-count: 10;
 }
 
+<<<<<<< HEAD
+=======
+.haiku-edit .edit_haiku ul {
+    list-style: none;
+    column-count: auto;
+}
+
+>>>>>>> 7e5095624281b0c7558dee865bdd5a9129d52775
 
 .haiku-edit a:link {
     color: #6DBF2E;
@@ -62,6 +74,10 @@
 .haiku-edit .incolor {
     color:red;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7e5095624281b0c7558dee865bdd5a9129d52775
 .haiku-home {
   background-image:url("http://cdn.wallpapersafari.com/96/26/z7T4hW.jpg");
 }
@@ -69,15 +85,24 @@
 
 
 .haiku-home h1 {
+<<<<<<< HEAD
     text-align: center;
     font-size: 70px;
+=======
+	text-align: center;
+	font-size: 70px;
+>>>>>>> 7e5095624281b0c7558dee865bdd5a9129d52775
     font-family: 'Palatino Linotype', serif;
     color: black;
 }
 
 
 .haiku-home h2 {
+<<<<<<< HEAD
     font-size: 56px;
+=======
+	font-size: 56px;
+>>>>>>> 7e5095624281b0c7558dee865bdd5a9129d52775
 }
 
 .haiku-home p {
@@ -117,9 +142,17 @@
 }
 
 .haiku-home .poems {
+<<<<<<< HEAD
     background-color: pink;}
     
     .haiku-new {
+=======
+    background-color: pink;
+}
+
+
+.haiku-new {
+>>>>>>> 7e5095624281b0c7558dee865bdd5a9129d52775
   background-color: #DAEE13;
 }
 
@@ -134,4 +167,8 @@
 .haiku-new h6 {
   text-align: center;
   color: darkgreen;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 7e5095624281b0c7558dee865bdd5a9129d52775

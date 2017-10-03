@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20170928225849) do
+=======
+ActiveRecord::Schema.define(version: 20171003152634) do
+>>>>>>> 7e5095624281b0c7558dee865bdd5a9129d52775
 
   create_table "haikus", force: :cascade do |t|
     t.string "title"
@@ -19,5 +23,15 @@ ActiveRecord::Schema.define(version: 20170928225849) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+<<<<<<< HEAD
+=======
+
+  create_table "users", force: :cascade do |t|
+    t.string "name"
+    t.string "email"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+>>>>>>> 7e5095624281b0c7558dee865bdd5a9129d52775
 
 end

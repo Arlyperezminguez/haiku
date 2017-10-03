@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1>Use form_edit_haiku file</h1>
 <div class='haiku-edit'>
   <h1>This page is used to edit a Haiku.</h1>
@@ -18,3 +19,31 @@
     </div>
   </form>
 </div>
+=======
+<div class='haiku-edit'>
+  <h1>This page is used to edit a Haiku.</h1>
+
+  <h3><%= "ID: #{@haiku.id}" %></h3>
+  <hr/>
+  <img src="https://ayegel-dev.nyc3.digitaloceanspaces.com/download.jpg">
+
+  <%= form_for @haiku do |f| %>
+    <% if @haiku.errors.any? %>
+      <h5>Errors</h5>
+      <ul>
+        <% @haiku.errors.full_messages.each do |message| %>
+          <li><p><%= message %></p></li>
+        <% end %>
+      </ul>
+    <% end %>
+
+    <%= f.label :title %>:
+    <%= f.text_field :title %><br />
+
+    <%= f.label :poem %>:
+    <%= f.text_area :poem, rows: 3 %><br />
+
+    <%= f.submit "Save changes" %>
+  <% end %>
+</div>
+>>>>>>> 7e5095624281b0c7558dee865bdd5a9129d52775
