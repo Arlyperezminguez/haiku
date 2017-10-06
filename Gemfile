@@ -8,10 +8,6 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.3'
-<<<<<<< HEAD
-gem 'ruby_rhymes'
-# Use sqlite3 as the database for Active Record
-=======
 
 # Stuff we'ved added during class
 gem 'jquery-rails'
@@ -21,7 +17,6 @@ gem 'jquery-rails'
 gem 'devise', '~> 4.3'
 
 # sqlite database.  Not good for real apps.  You should look into postgres or mySQL
->>>>>>> 7e5095624281b0c7558dee865bdd5a9129d52775
 gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'

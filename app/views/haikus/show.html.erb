@@ -1,11 +1,5 @@
 <h1 style="text-align: center;"><%= @haiku.title %></h1>
 
-<<<<<<< HEAD
-<p><%= @haiku.poem %></p>
-<p><%= "Their id is #{@haiku.id}" %></p>
-
-<%= link_to "Edit This Haiku", "/haikus/#{@haiku.id}/edit" %>
-=======
 <hr />
 
 <%= simple_format(@haiku.poem) %>
@@ -15,4 +9,13 @@
 <br />
 
 <%= link_to 'Delete This Haiku', [@haiku], method: :delete %>
->>>>>>> 7e5095624281b0c7558dee865bdd5a9129d52775
+
+<hr />
+<%= link_to "Author: #{@haiku.user.name}", @haiku.user %>
+
+<hr />
+<% if @haiku.average_rating > 0 %>
+   <h4><%= "Average Rating: #{@haiku.average_rating}" %></h4>
+<% else %>
+   <h4>The haiku has not been rated</h4>
+<% end %>

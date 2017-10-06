@@ -10,21 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20170928225849) do
-=======
-ActiveRecord::Schema.define(version: 20171003152634) do
->>>>>>> 7e5095624281b0c7558dee865bdd5a9129d52775
+ActiveRecord::Schema.define(version: 20171005234015) do
 
-  create_table "haikus", force: :cascade do |t|
-    t.string "title"
-    t.text "poem"
-    t.string "user_email"
+# Could not dump table "haikus" because of following StandardError
+#   Unknown type 'reference' for column 'user_id'
+
+  create_table "ratings", force: :cascade do |t|
+    t.integer "vote"
+    t.integer "user_id"
+    t.integer "haiku_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["haiku_id"], name: "index_ratings_on_haiku_id"
+    t.index ["user_id"], name: "index_ratings_on_user_id"
   end
-<<<<<<< HEAD
-=======
 
   create_table "users", force: :cascade do |t|
     t.string "name"
@@ -32,6 +31,5 @@ ActiveRecord::Schema.define(version: 20171003152634) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
->>>>>>> 7e5095624281b0c7558dee865bdd5a9129d52775
 
 end
