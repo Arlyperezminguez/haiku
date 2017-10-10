@@ -1,12 +1,7 @@
 def find_capital(country)
   return capitals[country]
 end
-<<<<<<< HEAD
-=======
 
-
-
->>>>>>> 7e5095624281b0c7558dee865bdd5a9129d52775
 def capitals
   return {
       "USA" => "Washington, DC",
@@ -30,9 +25,5 @@ def capitals
   }
 
 end
-<<<<<<< HEAD
-puts capitals["USA"]
-=======
 
 puts capitals["USA"]
->>>>>>> 7e5095624281b0c7558dee865bdd5a9129d52775

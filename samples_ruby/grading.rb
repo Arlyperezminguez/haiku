@@ -12,8 +12,4 @@ def grading(num)
   else
     return "Wrong score"
   end
-<<<<<<< HEAD
 end
-=======
-end
->>>>>>> 7e5095624281b0c7558dee865bdd5a9129d52775
